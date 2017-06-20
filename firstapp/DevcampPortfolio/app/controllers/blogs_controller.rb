@@ -60,6 +60,9 @@ class BlogsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+    def hey
+    end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -71,4 +74,5 @@ class BlogsController < ApplicationController
     def blog_params
       params.require(:blog).permit(:title, :body)
     end
+
 end
