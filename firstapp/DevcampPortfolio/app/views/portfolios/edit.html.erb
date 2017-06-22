@@ -19,4 +19,7 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  
+<h2>Destroy?</h2>
+<%= link_to 'Destroy', @portfolio_item, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
