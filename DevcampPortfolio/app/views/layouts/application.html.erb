@@ -18,6 +18,16 @@
       <%= link_to "Login", new_user_session_path %> 
       <%= link_to "Register", new_user_registration_path %>
     <% end %>
+    
     <%= yield %>
+    
+ 
+    <% if session[:source] %> 
+      Thanks for visiting me from <%= session[:source] %>
+    <% else %>
+      IDK HOW YOU GOT HERE YOU WIZZAARD
+    <% end %>
+    
   </body>
 </html>
+
