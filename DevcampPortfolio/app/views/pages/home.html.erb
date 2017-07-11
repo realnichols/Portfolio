@@ -1,7 +1,7 @@
 <% if current_user %>
-  <h1>Hi, <%= current_user.first_name if current_user %><h1>
-<% else %>
-  <h1>hey loser with no account</h1>
+  <h1>Hi, <%= current_user.first_name %><h1>
 <% end %>
+
 <%= link_to 'Portfolios', portfolios_path %>
 <%= link_to 'Blogs', blogs_path %>
+<br>
